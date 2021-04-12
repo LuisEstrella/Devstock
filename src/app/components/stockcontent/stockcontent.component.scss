@@ -21,6 +21,7 @@ $colorSecundary:rgb(3, 172, 107);
          flex-direction: row;
          .Cls_small{
              border: none;
+             background: blue;
          }
         }
      .Cls_mediumContainer{
@@ -39,6 +40,9 @@ $colorSecundary:rgb(3, 172, 107);
             height: 50%;
             background: chartreuse;
             border:2px solid rgb(63, 30, 210);
+        }
+        .Cls_small:nth-child(2){
+            background: blue;
         }
     }
 }
