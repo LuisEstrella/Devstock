@@ -5,10 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DevmainComponent } from './main/devmain/devmain.component';
 import { FooterComponent } from './main/footer/footer.component';
+
 import { StockcontentComponent } from './components/stockcontent/stockcontent.component';
 import { ProductComponent } from './components/product/product.component';
 import { SubproductComponent } from './components/subproduct/subproduct.component';
 import { ResumeComponent } from './components/resume/resume.component';
+
+import { HeaderComponent } from './main/header/header.component';
+
 
 
 @NgModule({
@@ -20,6 +24,9 @@ import { ResumeComponent } from './components/resume/resume.component';
     ProductComponent,
     SubproductComponent,
     ResumeComponent,
+
+    HeaderComponent,
+
   ],
   imports: [
     BrowserModule,
