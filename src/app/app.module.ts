@@ -7,6 +7,7 @@ import { StockcontentComponent } from './components/inventory/stockcontent/stock
 import { DevmainComponent } from './main/devmain/devmain.component';
 import { ProductComponent } from './components/inventory/product/product.component';
 import { FooterComponent } from './main/footer/footer.component';
+import { HeaderComponent } from './main/header/header.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FooterComponent } from './main/footer/footer.component';
     DevmainComponent,
     ProductComponent,
     FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
