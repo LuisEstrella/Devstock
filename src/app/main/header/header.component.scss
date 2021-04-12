@@ -1,0 +1,15 @@
+$fontColor: #00EC76;
+
+header{
+    //Dimensiones
+    width: 100%;
+    height: 7vh;
+    //Estilo
+    background-color: #0A355D;
+    //Disposicion y estilo de sus elementos hijos
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
