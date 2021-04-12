@@ -3,19 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StockcontentComponent } from './components/inventory/stockcontent/stockcontent.component';
 import { DevmainComponent } from './main/devmain/devmain.component';
-import { ProductComponent } from './components/inventory/product/product.component';
 import { FooterComponent } from './main/footer/footer.component';
+import { StockcontentComponent } from './components/stockcontent/stockcontent.component';
+import { ProductComponent } from './components/product/product.component';
+import { SubproductComponent } from './components/subproduct/subproduct.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StockcontentComponent,
     DevmainComponent,
-    ProductComponent,
     FooterComponent,
+    StockcontentComponent,
+    ProductComponent,
+    SubproductComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
