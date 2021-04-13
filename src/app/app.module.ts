@@ -12,6 +12,10 @@ import { SubproductComponent } from './components/subproduct/subproduct.componen
 import { ResumeComponent } from './components/resume/resume.component';
 
 import { HeaderComponent } from './main/header/header.component';
+import { SummaryComponent } from './components/inventory/summary/summary.component';
+import { ProductsComponent } from './components/inventory/products/products.component';
+import { CategoryComponent } from './components/inventory/category/category.component';
+import { CategoryListComponent } from './components/inventory/summary/category-list/category-list.component';
 
 
 
@@ -26,6 +30,14 @@ import { HeaderComponent } from './main/header/header.component';
     ResumeComponent,
 
     HeaderComponent,
+
+    SummaryComponent,
+
+    ProductsComponent,
+
+    CategoryComponent,
+
+    CategoryListComponent,
 
   ],
   imports: [
