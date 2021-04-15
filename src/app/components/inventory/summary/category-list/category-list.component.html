@@ -1,82 +1,16 @@
 <div id="I_bigCategory">
-    <div id="I_medium">
+    <div id="I_medium" *ngFor="let category of category" >
         <div>
-            <h2>Repuestos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur  </p>
+            <h2>{{category.title}}</h2>
+            <p>{{category.description}}</p>
         </div>
         <div>
-           <p><span>30</span>ptos</p>
-           <p><span>10</span>unds</p>
+           <p><span>{{category.puntos}}</span>ptos</p>
+           <p><span>{{category.unidades}}</span>unds</p>
         </div>
         <div>
-            <span>$20.000</span>
-        </div>
-    </div>
-    <div id="I_medium">
-        <div>
-            <h2>Repuestos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur  </p>
-        </div>
-        <div>
-           <p><span>30</span>ptos</p>
-           <p><span>10</span>unds</p>
-        </div>
-        <div>
-            <span>$20.000</span>
+            <span>${{category.vTotal}}</span>
         </div>
     </div>
-    <div id="I_medium">
-        <div>
-            <h2>Repuestos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur  </p>
-        </div>
-        <div>
-           <p><span>30</span>ptos</p>
-           <p><span>10</span>unds</p>
-        </div>
-        <div>
-            <span>$20.000</span>
-        </div>
-    </div>
-    <div id="I_medium">
-        <div>
-            <h2>Repuestos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur  </p>
-        </div>
-        <div>
-           <p><span>30</span>ptos</p>
-           <p><span>10</span>unds</p>
-        </div>
-        <div>
-            <span>$20.000</span>
-        </div>
-    </div>
-    <div id="I_medium">
-        <div>
-            <h2>Repuestos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur  </p>
-        </div>
-        <div>
-           <p><span>30</span>ptos</p>
-           <p><span>10</span>unds</p>
-        </div>
-        <div>
-            <span>$20.000</span>
-        </div>
-    </div>
-    <div id="I_medium">
-        <div>
-            <h2>Repuestos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur  </p>
-        </div>
-        <div>
-           <p><span>30</span>ptos</p>
-           <p><span>10</span>unds</p>
-        </div>
-        <div>
-            <span>$20.000</span>
-        </div>
-    </div>
-
-
+ 
 </div>

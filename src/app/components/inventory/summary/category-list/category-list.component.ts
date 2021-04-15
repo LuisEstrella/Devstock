@@ -12,4 +12,42 @@ export class CategoryListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  category=[
+    {
+      title: "Repuestos",
+      description: "Lorem ipsum dolor sit, amet consectetur",
+      puntos: "30",
+      unidades: "10",
+      vTotal: 20000
+    },
+    {
+      title: "Repuestos",
+      description: "Lorem ipsum dolor sit, amet consectetur",
+      puntos: "30",
+      unidades: "10",
+      vTotal: 20000
+    },
+    {
+      title: "Repuestos",
+      description: "Lorem ipsum dolor sit, amet consectetur",
+      puntos: "30",
+      unidades: "10",
+      vTotal: 20000
+    },
+    {
+      title: "Repuestos",
+      description: "Lorem ipsum dolor sit, amet consectetur",
+      puntos: "30",
+      unidades: "10",
+      vTotal: 20000
+    },
+    {
+      title: "Repuestos",
+      description: "Lorem ipsum dolor sit, amet consectetur",
+      puntos: "30",
+      unidades: "10",
+      vTotal: 20000
+    },
+  ]
+
 }
