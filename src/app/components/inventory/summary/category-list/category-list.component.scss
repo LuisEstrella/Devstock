@@ -36,12 +36,14 @@ $colorSecundary:#34bf98;
             flex-wrap: wrap;
             
             h2{
+                font-size: 3vh;
                 left: 2%;
                 top: -20%;
                 position: absolute;
                 color: white;
             }
             p{
+                font-size: 2vh;
                 left: 2%;
                 top: 25%;
                 width: 95%;
@@ -66,13 +68,13 @@ $colorSecundary:#34bf98;
             p{
                 display: flex;
                 flex-direction: row;
-                
+                font-size: 2vh;
                 position: absolute;
                 width: 60%;
                 // background: chartreuse;
                 span{
                     width: 30%;
-                    font-size: 1.2em;
+                    font-size: 2.5vh;
                     font-weight: bold;
                     // background: coral;
                     // color: chocolate;
@@ -99,7 +101,7 @@ $colorSecundary:#34bf98;
             align-items: center;
             // flex-wrap: wrap;
            span{
-            font-size: 1.2em;
+            font-size: 2.5vh;
             font-weight: bold;
            }
         }
