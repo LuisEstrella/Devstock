@@ -9,7 +9,7 @@ header{
     //Disposicion y estilo de sus elementos hijos
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
 }
@@ -19,5 +19,32 @@ a{
 }
 li {
     list-style:none;
+}
+
+#I_list1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+#I_ulLeft{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#I_left{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: yellow;
+}
+div{
+    width: 30%;
+
+}
+
+#I_ulLeft{
+    background-color: green;
 }
 
