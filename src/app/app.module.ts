@@ -12,6 +12,7 @@ import { SummaryComponent } from './components/inventory/summary/summary.compone
 import { ProductsComponent } from './components/inventory/products/products.component';
 import { CategoryComponent } from './components/inventory/category/category.component';
 import { CategoryListComponent } from './components/inventory/summary/category-list/category-list.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -25,11 +26,12 @@ import { CategoryListComponent } from './components/inventory/summary/category-l
     ProductsComponent,
     CategoryComponent,
     CategoryListComponent,
-
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

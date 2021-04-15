@@ -1,5 +1,5 @@
 <div id="I_bigCategory">
-    <div id="I_medium" *ngFor="let category of category" >
+    <div id="I_medium" *ngFor="let category of category | paginate: {itemsPerPage: 6, currentPage: pageActual} " >
         <div>
             <h2>{{category.title}}</h2>
             <p>{{category.description}}</p>
@@ -12,5 +12,6 @@
             <span>${{category.vTotal}}</span>
         </div>
     </div>
- 
+    <pagination-controls class="my-pagination" (pageChange)="pageActual = $event" previousLabel=""
+    nextLabel=""  ></pagination-controls>
 </div>
