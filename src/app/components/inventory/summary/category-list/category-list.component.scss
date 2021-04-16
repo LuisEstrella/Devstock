@@ -121,7 +121,23 @@ $colorSecundary:#34bf98;
 //     }
   
 // }
+.my-pagination{
+    background: red;
+    top: 20%;
+}
+.my-pagination ::ng-deep .ngx-pagination .current {
 
+    background:$colorSecundary;
+}
+
+.my-pagination ::ng-deep .ngx-pagination a{
+    color: white;
+    
+}
+
+.my-pagination ::ng-deep .ngx-pagination a:hover{
+    background: $colorSecundary;
+}
 
 }
 

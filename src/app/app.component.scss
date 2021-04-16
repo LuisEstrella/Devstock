@@ -2,3 +2,15 @@
 //     background: #121216;
 //   }
 
+.my-pagination .ngx-pagination {
+    padding-left: 0px !important;
+  }
+  
+  .my-pagination .ngx-pagination .current,
+  .btn-info {
+    background: #17a2b8 !important;
+    border: transparent !important;
+    border-radius: 20px !important;
+  }
+  
+ 
