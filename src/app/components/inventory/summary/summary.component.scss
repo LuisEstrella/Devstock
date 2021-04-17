@@ -83,7 +83,7 @@ $colorSecundary:#34bf98;
 
     .Cls_mediumContainer.two{
         border: 2px solid black;
-        background: chocolate;
+        background: $colorPrimary;
      //disposicion
      @include Disposicion(column);
      .Cls_small{

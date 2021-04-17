@@ -1,3 +1,28 @@
+<div class="options">
+    <div class="actions">
+        <span>categorias</span>
+        <strong>1</strong>
+        <div  >
+            <button class="right" ><i class="fas fa-caret-left"></i></button>
+            <button class="searc" ><i class="fas fa-search"></i></button>
+            <form class="consult">
+                <input type="text" placeholder="Codigo o descripcion de la categoria">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <a ><i class="fas fa-plus"></i></a>
+    </div>
+    <div class="filters" >
+        <select>
+            <option value="1">Productos</option>
+            <option value="2">Unidades</option>
+            <option value="3">Inventario</option>
+        </select>
+        <button class="may" ><i class="fas fa-sort-numeric-down"></i></button>
+        <button class="men" ><i class="fas fa-sort-numeric-up-alt"></i></button>
+        <div></div>
+    </div>
+</div>
 <div id="I_bigCategory">
     <div id="I_medium" *ngFor="let category of category | paginate: {itemsPerPage: 6, currentPage: pageActual} " >
         <div>
@@ -18,3 +43,4 @@
     </div>
    
 </div>
+

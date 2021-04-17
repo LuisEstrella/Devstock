@@ -5,7 +5,8 @@ import { SummaryComponent } from './components/inventory/summary/summary.compone
 import { DevmainComponent } from './main/devmain/devmain.component';
 
 const routes: Routes = [
-  {path:'', component: DevmainComponent},
+  {path:'', redirectTo: '/devmain', pathMatch:'full'},
+  {path:'devmain', component: DevmainComponent},
   {path:'stock', component: SummaryComponent},
 ];
 
