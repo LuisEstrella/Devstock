@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category-list.component.scss']
 })
 export class CategoryListComponent implements OnInit {
-
+  search: string = "search-hide";
+  pool: string = "first";
+  register: string = "hide";
   constructor() { }
 
   ngOnInit(): void {
