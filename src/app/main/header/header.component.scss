@@ -1,50 +1,80 @@
-$fontColor: #00EC76;
+// $fontColor: #00EC76;
+
+// header{
+//     //Dimensiones
+//     width: 100%;
+//     height: 7vh;
+//     //Estilo
+//     background-color: #0A355D;
+//     //Disposicion y estilo de sus elementos hijos
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+    
+// }
+// a{
+//     text-decoration: none;
+//     color: $fontColor;
+// }
+// li {
+//     list-style:none;
+// }
+
+// #I_list1{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+
+// }
+// #I_ulLeft{
+//     display: flex;
+//     justify-content: space-between;
+    
+
+// }
+// #I_left{
+//     display: flex;
+//     justify-content: flex-start;
+//     align-content: flex-start;
+//     background-color: yellow;
+// }
+// div{
+//     width: 30%;
+
+// }
+
+// #I_ulLeft{
+//     background-color: green;
+// }
 
 header{
-    //Dimensiones
-    width: 100%;
-    height: 7vh;
-    //Estilo
-    background-color: #0A355D;
-    //Disposicion y estilo de sus elementos hijos
+    background: yellow;
+    height: 6vh;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    #I_admin{
+        width: 30%;
+        background: coral;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #I_search{
+            background: chocolate;
+        }
+        #I_admin-two{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            background: cornflowerblue;
+            padding: 3px;
+            button{
+                background: transparent;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
 }
-a{
-    text-decoration: none;
-    color: $fontColor;
-}
-li {
-    list-style:none;
-}
-
-#I_list1{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-}
-#I_ulLeft{
-    display: flex;
-    justify-content: space-between;
-    
-
-}
-#I_left{
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    background-color: yellow;
-}
-div{
-    width: 30%;
-
-}
-
-#I_ulLeft{
-    background-color: green;
-}
-

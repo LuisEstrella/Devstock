@@ -9,6 +9,7 @@ export class CategoryListComponent implements OnInit {
   search: string = "search-hide";
   pool: string = "first";
   register: string = "hide";
+  filter: string = 'mayor';
   constructor() { }
 
   ngOnInit(): void {
