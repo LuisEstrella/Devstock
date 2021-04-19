@@ -149,14 +149,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #34bf98;
+    // background: #34bf98;
+    color: $colorSecundary;
     
     .options {
         display: flex;
         align-items: center;
         gap:0.8em;
         transition: all 0.5s;
-        
+        button{
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
         .consult {
             position: relative;
             overflow: hidden;
@@ -164,7 +169,8 @@ header {
             align-items: center;
             justify-content: flex-end;
             transition: all 0.5s;
-
+          
+           
             .search {
                 border: 1px solid rgb(211, 209, 209);
                 border-radius: 100px;
@@ -192,6 +198,9 @@ header {
                 transition: all 0.5s;
             }
         }
+        .fa-plus{
+            color: $colorSecundary;
+        }
     }
     .search-hide {
         width: 30px;
@@ -202,7 +211,13 @@ header {
             left: -100%;
         }
         .btn-show {
+            // background: transparent;
+            // border: transparent;
+            // cursor: pointer;
             left: 0%;
+            .fa-search{
+                color: $colorSecundary;
+            }
         }
     }
     .search-show {
@@ -224,6 +239,7 @@ header {
         margin-right: 1%;
         
         select {
+            color: $colorSecundary;
             background: transparent;
             border: none;
         }
