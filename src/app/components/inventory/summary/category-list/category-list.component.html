@@ -21,14 +21,17 @@
         </div>
         <button (click)="register='show'"><i class="fas fa-plus"></i></button>
     </div>
-    <div class="filters">
+    <div class="filters" [class]="filter">
         <select name="" id="">
             <option value="">1</option>
             <option value="">2</option>
         </select>
         <!-- <i class="fas fa-sort-numeric-up"></i> -->
-        <button class="may" (click)="filter = 'mayor'"><i class="fas fa-sort-numeric-down"></i></button>
-        <button class="men" (click)="filter = 'menor'"><i class="fas fa-sort-numeric-up-alt"></i></button>
+        <div>
+            <button class="may" (click)="filter = 'mayor'"><i class="fas fa-sort-numeric-down"></i></button>
+            <button class="men" (click)="filter = 'menor'"><i class="fas fa-sort-numeric-up-alt"></i></button>
+        </div>
+        
     </div>
 </header>
 <div id="I_bigCategory">

@@ -1,49 +1,34 @@
-<!-- <header>
-    <div id="I_left">
-        <ul id="I_ulLeft">
-            <div id="I_list1">
-                <li><a href="">Logo</a></li>
-                <li><a href="">Location</a></li>
-            </div>
-        </ul>
-    </div>
 
-    <div id="I_center">
-        <a href="">L</a>
-    </div>
-
-    <div id="I_right">
-        <ul id="I_ulRight">
-            <li><a href="">Catalogo</a></li>
-            <li><a href="">N</a></li>
-            <li><a href="">User</a></li>
-            <li><a href="">C</a></li>
-        </ul>
-
-    </div>
-</header>
-<a  [routerLink]="['/stock']">Mujer</a> -->
 
 <header>
     <div id="I_logo">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>San antonio de prado</span>
-        <small>3126546766</small>
+        <a [routerLink]="['/stock']"><img src="assets/img/logo.png" alt=""></a>
+        <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>San antonio de prado</span>
+            <small>3126546766</small>
+        </div>
     </div>
-    <div>
-        <i class="fas fa-search"></i>
+    <div id="consult" [class]="search">
+        <button id="I_btnBuscar" (click)="search= 'search-show'"><i class="fas fa-search"></i></button>
+        <button id="I_btnCerrar" (click)="search= 'search-hide'"><i class="fas fa-caret-left"></i></button>
+        <div class="prueba" >
+            <input type="text">
+            <button><i class="fas fa-search"></i></button>
+        </div>
     </div>
     <div id="I_admin">
         <div id="I_search">
-            <span>Catalogo</span>   
-            <i class="fas fa-share-alt"></i>
+            <span>Catálogo</span>   
+            <button><i class="fas fa-share-alt"></i></button>
+            
         </div>
         <div id="I_admin-two">
-            <i class="fas fa-bell"></i>
-            <i class="fas fa-user"></i>
+            <button><i class="fas fa-bell"></i></button>
+            <button><i class="fas fa-user"></i></button>
             <span>Luis Miguel Estrella</span>
             <button><i class="fas fa-sign-out-alt"></i></button>
         </div>
-
     </div>
 </header>
+ 
