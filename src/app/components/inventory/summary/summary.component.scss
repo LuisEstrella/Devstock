@@ -15,6 +15,7 @@ $colorSecundary:#34bf98;
     width: 100%;
     //estilos del elemento
     background: blue;
+    // height: vh;
     
     //Disposicion del elemento
 
@@ -24,7 +25,10 @@ $colorSecundary:#34bf98;
     //Hijos
     .Menu{
         width: 4%;
-        background: rgb(17, 0, 255);
+        
+        background: rgb(151,151,151);
+        background: linear-gradient(0deg, rgba(151,151,151,1) 0%, rgba(255,255,255,1) 100%);
+       
        
     }
  .Cls_mediumContainer{
@@ -42,8 +46,10 @@ $colorSecundary:#34bf98;
         .Cls_small{
             width: 100%;
             height: 50%;
-            background: rgb(151,151,151);
-            background: linear-gradient(0deg, rgba(151,151,151,1) 0%, rgba(255,255,255,1) 100%);
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(20,23,38,1) 95%);
+            // background: rgb(151,151,151);
+            // background: linear-gradient(0deg, rgba(151,151,151,1) 0%, rgba(255,255,255,1) 100%);
             border:1px solid rgb(0, 0, 0);
 
             .resume{
@@ -88,7 +94,8 @@ $colorSecundary:#34bf98;
         display: flex;
         flex-wrap: wrap;
         border: 2px solid black;
-        background: rgb(175, 39, 39);
+        // background: rgb(175, 39, 39);
+        
      //disposicion
      @include Disposicion(column);
     }
