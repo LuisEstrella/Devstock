@@ -35,19 +35,17 @@
     </div>
 </header>
 <div id="I_bigCategory">
-    <!-- <div id="I_medium" *ngFor="let category of category | paginate: {itemsPerPage: 6, currentPage: pageActual} " >
-        <div>
+    <div id="I_medium" *ngFor="let category of category | paginate: {itemsPerPage: 1, currentPage: pageActual} " > 
+        <div id="I_InformatioOne">
             <h2>{{category.title}}</h2>
             <p>{{category.description}}</p>
         </div>
-        <div>
+        <div id="I_InformatioTwo">
            <p><span>{{category.puntos}}</span>ptos</p>
            <p><span>{{category.unidades}}</span>unds</p>
+           <span id="Id_Total">${{category.vTotal}}</span>
         </div>
-        <div>
-            <span>${{category.vTotal}}</span>
-        </div>
-    </div> -->
+    </div>
 
     <div *ngIf="register=='show'" class="modal-windows">
         <form action="">
@@ -64,10 +62,10 @@
             <button  (click)="register='hide'" class="cancel">Cancelar</button>
         </form>
     </div>
-    <!-- <div>
-        <pagination-controls class="my-pagination" (pageChange)="pageActual = $event" previousLabel=""
-        nextLabel=""  ></pagination-controls>
-    </div> -->
+</div>
+<div class="Cls_Pagination">
+    <pagination-controls class="my-pagination" (pageChange)="pageActual = $event" previousLabel=""
+    nextLabel=""  ></pagination-controls>
 </div>
 
 

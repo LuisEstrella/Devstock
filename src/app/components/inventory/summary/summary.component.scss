@@ -14,7 +14,7 @@ $colorSecundary:#34bf98;
     //dimenciones del elemento
     width: 100%;
     //estilos del elemento
-    background: rgb(25, 25, 165);
+    background: transparent;
     // height: vh;
     
     //Disposicion del elemento
@@ -24,7 +24,7 @@ $colorSecundary:#34bf98;
     flex-wrap: wrap;
     //Hijos
     .Menu{
-        width: 4%;
+        width: 5%;
         
         background: rgb(151,151,151);
         background: linear-gradient(0deg, rgba(151,151,151,1) 0%, rgba(255,255,255,1) 100%);
@@ -33,7 +33,7 @@ $colorSecundary:#34bf98;
     }
  .Cls_mediumContainer{
          //dimenciones del elemento
-         width: 48%;
+         width: 60%;
         
          //estilos del elemento
         //  background: rgb(206, 45, 45);
@@ -94,6 +94,7 @@ $colorSecundary:#34bf98;
         display: flex;
         flex-wrap: wrap;
         border: 2px solid black;
+        width: 35%;
         // background: rgb(175, 39, 39);
         
      //disposicion
