@@ -9,7 +9,7 @@ $colorSecundary:#34bf98;
 }
 #I_bigCategory{
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,9 +18,6 @@ $colorSecundary:#34bf98;
     background: transparent;
     
     
-    #I_medium:hover{
-        border: 3px solid rgb(167, 167, 231);
-    }
     #I_medium{
         margin-top: 2%;
         width: 95%;
@@ -28,16 +25,17 @@ $colorSecundary:#34bf98;
         height: 60px;
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         // background: white;
         border-radius: 20px;
-        border: 3px solid $colorSecundary;
+        border: 2px solid $colorPrimary;
         // position: relative;
         top: 1%;
         color: $colorSecundary;
-        cursor: pointer;
+        // cursor: pointer;
         #I_InformatioOne{
             width: 70%;
-            
+
             // border-radius: 20px;
             //  position: relative;
             display: flex;
@@ -65,25 +63,43 @@ $colorSecundary:#34bf98;
             }
         }
         #I_InformatioTwo{
-            width: 30%;
-
+            width: 35%;
+            padding: 5px;
+            height: 58px;
             // background: blue;
-            // flex-wrap: wrap
-            
+            flex-wrap: wrap;  //REVISAR, al quitar la letra no se sale
             position: relative;
-
-            
-
+            -webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+            border-end-end-radius: 15px;
+            border-top-right-radius: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            flex-wrap: wrap;
-
+            color: $colorPrimary;
+            cursor: pointer;
+            a i{
+                display: none;
+                
+            }
+            
             &:hover{
-                opacity:0.1 ;
+                background: rgba(0, 0, 63, 0.4);
+
+                a i{
+                    display: block;
+                    position: absolute;
+                    color: white;
+                    opacity: 20;
+                    top: 10%;
+                    right: 40%;
+                   font-size: 6vh;
+                }
             }
 
             p{
+                
                 font-family: "MR";
                 font-size: 2vh;
             }
@@ -93,8 +109,8 @@ $colorSecundary:#34bf98;
             }
                 #Id_Total{
 
-                    font-size: 2.2vh;
-                    font-weight: bold;
+                    font-size: 2.7vh;
+                    
                     // background: coral;
                     // color: chocolate;
                 }
@@ -130,20 +146,28 @@ $colorSecundary:#34bf98;
 
 header {
     width: 100%;
-    height: 5%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     // background: #34bf98;
-    color: $colorSecundary;
+    color: $colorPrimary;
     flex-wrap: wrap;
     gap: 0.5em;
-    
+    padding-top: 15px;
     .options {
         display: flex;
         align-items: center;
         gap:0.8em;
         transition: all 0.5s;
+        font-family: "MR";
+        span{
+            font-size: 1.8vh;
+        }
+        strong{
+            font-size: 2vh;
+            font-family: "MB";
+        }
         button{
             background: transparent;
             border: none;
@@ -167,7 +191,7 @@ header {
                 transition: all 0.5s;
 
                 input {
-                    width: 90%;
+                    width: 70%;
                     background: transparent;
                     border: none;
                     padding: 0% 2%;
@@ -177,7 +201,7 @@ header {
                     width: 10%;
                     height: 100%;
                     box-shadow: 0px 0px 10px rgb(139, 139, 139, 0.5);
-                    background: #02925D;
+                    background: none;
                 }
             }
 
@@ -187,7 +211,8 @@ header {
             }
         }
         .fa-plus{
-            color: $colorSecundary;
+            color: $colorPrimary;
+            
         }
     }
     .search-hide {
@@ -204,12 +229,12 @@ header {
             // cursor: pointer;
             left: 0%;
             .fa-search{
-                color: $colorSecundary;
+                color: $colorPrimary;
             }
         }
     }
     .search-show {
-        width: 300px;
+        width: 250px;
         .search {
             width: 92%;
         }
@@ -243,15 +268,16 @@ header {
         flex-direction: row;
         align-items: flex-end;
         margin-right: 8%;
-        background: yellow;
+        // background: rgb(0, 0, 0);
         position: relative;
         flex-grow: 0;
         
         justify-content: flex-end;
         
         select {
-            color: $colorSecundary;
-            background: transparent;
+            font-family: "MR";
+            color: white;
+            background: $colorPrimary;
             border: none;
         }
 
@@ -259,6 +285,9 @@ header {
             position: absolute;
             top: 0%;
             transition: all 0.5s;
+            background:none;
+            border: none;
+            cursor: pointer;
         }
     }
 
@@ -267,18 +296,19 @@ header {
 .modal-windows {
     width: 100%;
     height: 95%;
-    background: rgba(211, 211, 211, 0.5);
+    background: rgba(0, 0, 63, 0.4);
     position: absolute;
     left: 0%;
     top: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+   color: $colorPrimary;
+   font-family: "MB";
 
     form {
         padding: 5% 3%;
-        width: 50%;
+        width: 60%;
         height: 100%;
         background: white;
         position: absolute;
@@ -286,24 +316,35 @@ header {
         display: flex;
         flex-direction: column;
         gap: 1em;
-        box-shadow: 0px 0px 5px rgba(22, 22, 22, 0.5);
-       
+        -webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+        // box-shadow: 0px 0px 5px rgba(22, 22, 22, 0.5);
+        
         .a-form-control {
             display: flex;
             flex-direction: column;
+            padding-top: 25px;
             input, textarea {
-                width: 100%;
+                width: 80%;
                 border: none;
                 outline: none;
-                border-bottom: 1px solid rgb(209, 209, 209);
+                border-bottom: 1px solid$colorPrimary;
             }
         }
 
         .save {
-            background: #02925D;
-            border-radius: 10px;
+            background: $colorPrimary;
+            border-radius: 5px;
             color: white;
+            font-family: "MB";
+        }
+        .cancel{
+            font-family: "MB";
         }
     }
 }
 
+.my-pagination{
+    font-family: "MB";
+}

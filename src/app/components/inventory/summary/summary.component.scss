@@ -92,10 +92,10 @@ $colorSecundary:#34bf98;
 
     .Cls_mediumContainer.two{
         display: flex;
-        flex-wrap: wrap;
+        
         border: 2px solid black;
         width: 35%;
-        // background: rgb(175, 39, 39);
+     
         
      //disposicion
      @include Disposicion(column);

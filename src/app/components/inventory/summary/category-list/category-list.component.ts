@@ -65,6 +65,13 @@ export class CategoryListComponent implements OnInit {
       unidades: "10",
       vTotal: 20000
     },
+    {
+      title: "Tornillos",
+      description: "Lorem ipsum dolor sit, amet consectetur",
+      puntos: "30",
+      unidades: "10",
+      vTotal: 20000
+    },
   ]
 
 }

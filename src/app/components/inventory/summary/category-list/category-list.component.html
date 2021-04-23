@@ -23,8 +23,10 @@
     </div>
     <div class="filters" [class]="filter">
         <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
+            <option value="">Productos</option>
+            <option value="">Unidades</option>
+            <option value="">Valor</option>
+            <option value="">Ventas</option>
         </select>
         <!-- <i class="fas fa-sort-numeric-up"></i> -->
         <div>
@@ -35,12 +37,13 @@
     </div>
 </header>
 <div id="I_bigCategory">
-    <div id="I_medium" *ngFor="let category of category | paginate: {itemsPerPage: 1, currentPage: pageActual} " > 
+    <div id="I_medium" *ngFor="let category of category | paginate: {itemsPerPage: 7, currentPage: pageActual} " > 
         <div id="I_InformatioOne">
             <h2>{{category.title}}</h2>
             <p>{{category.description}}</p>
         </div>
         <div id="I_InformatioTwo">
+            <a><i class="fa fa-info-circle"></i></a>
            <p><span>{{category.puntos}}</span>ptos</p>
            <p><span>{{category.unidades}}</span>unds</p>
            <span id="Id_Total">${{category.vTotal}}</span>
@@ -58,7 +61,7 @@
                 <label for="name">Descripción</label>
                 <textarea name="" id="" cols="30" rows="5"></textarea>
             </div>
-            <button class="save">Guardar</button>
+            <button class="save">Guardar Registro</button>
             <button  (click)="register='hide'" class="cancel">Cancelar</button>
         </form>
     </div>
