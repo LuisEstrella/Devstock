@@ -25,8 +25,8 @@ $colorSecundary:#34bf98;
         height: 60px;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        // background: white;
+        // flex-wrap: nowrap;
+        background: white;
         border-radius: 20px;
         border: 2px solid $colorPrimary;
         // position: relative;
@@ -67,7 +67,7 @@ $colorSecundary:#34bf98;
             padding: 5px;
             height: 58px;
             // background: blue;
-            flex-wrap: wrap;  //REVISAR, al quitar la letra no se sale
+            // flex-wrap: wrap;  //REVISAR, al quitar la letra no se sale
             position: relative;
             -webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
@@ -86,8 +86,9 @@ $colorSecundary:#34bf98;
             
             &:hover{
                 background: rgba(0, 0, 63, 0.4);
-
+               
                 a i{
+                    z-index: 9;
                     display: block;
                     position: absolute;
                     color: white;
@@ -108,9 +109,10 @@ $colorSecundary:#34bf98;
                 font-family: "MB";
             }
                 #Id_Total{
-
+                    // z-index: 9;
                     font-size: 2.7vh;
-                    
+                    position: absolute;
+                    right: 10%;
                     // background: coral;
                     // color: chocolate;
                 }
